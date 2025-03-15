@@ -1,0 +1,20 @@
+CREATE TABLE documento(
+	id BIGINT NOT NULL AUTO_INCREMENT,
+	cpf VARCHAR(14) NOT NULL,
+	rg VARCHAR(20) NOT NULL,
+	data_nascimento DATE NOT NULL,
+	
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE endereco (
+    id BIGINT NOT NULL AUTO_INCREMENT,
+    cep VARCHAR(9) NOT NULL,
+    cidade VARCHAR(100) NOT NULL,
+    rua VARCHAR(100) NOT NULL,
+    numero INT NOT NULL,
+    complemento VARCHAR(100),
+    estado VARCHAR(50) NOT NULL,
+    
+    PRIMARY KEY (id)
+);
